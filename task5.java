@@ -1,10 +1,20 @@
-import java.util.Scanner;
 public class task5 {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number :");
-        double num=sc.nextDouble();
-        while(num>=10){
-            num=num/2;
-            System.out.println(num);}
-    }}
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int num = -1;
+        int fact = 1;
+        int i;
+        for(i=1 ; i<=num ; i++)
+        {fact = i*fact;
+        }
+        if(num<=0)
+            System.out.println("invalid");
+        else{
+        System.out.print("factorial " +fact);
+        }
+    }
+}
