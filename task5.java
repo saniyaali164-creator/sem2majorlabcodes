@@ -1,8 +1,10 @@
+import java.util.Scanner;
 public class task5 {
-    public static void main(String[] args) {
-        double radius = 7.0;
-        // Formula: Circumference = 2 × π × radius
-        double circumference = 2 * Math.PI * radius;
-        System.out.println("Radius: " + radius);
-        System.out.println("Circumference: " + circumference);
-}}
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number :");
+        double num=sc.nextDouble();
+        while(num>=10){
+            num=num/2;
+            System.out.println(num);}
+    }}
