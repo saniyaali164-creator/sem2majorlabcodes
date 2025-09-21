@@ -1,20 +1,19 @@
 import java.util.Scanner;
+// fibonaci series
 public class op3 {
     public static void main(String[] args){
+        System.out.print("Enter a value for N: ");
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter a number:");
-        int num = s.nextInt();
-        int reverse = 0;
-        int temp = num;
-        while(temp!=0){
-            int digit = temp%10;
-            reverse = reverse*10 + digit;
-            temp = temp/10;
-        }
-        if(reverse==num){
-            System.out.println("Palindrome");
-        } else {
-            System.out.println("Not a Palindrome");
+        int N = s.nextInt();
+        int a=0;
+        int b=1;
+        System.out.print(a+" ");
+        System.out.print(b+" ");
+        for(int i = 1; i<=N; i++){
+            int next = a+b;
+            System.out.print(next + " ");
+            a=b;
+            b=next;
         }
     }
 }
